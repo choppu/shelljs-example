@@ -1,1 +1,42 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>KProJS Web HID Example Page</title><meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"><link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"><link rel="stylesheet" type="text/css" href="https://choppu.github.io/kprojs-example/index.799770e0.css"><script type="module" src="https://choppu.github.io/kprojs-example/index.ec6edc10.js"></script></head><body id="main group"> <div class="kprojs_example_left-container"> <div class="kprojs_example_btns-container"> <button class="kprojs_example__button" id="btn-connect">Connect to KPro Wallet</button> <button class="kprojs_example__button" id="btn-get-conf" disabled>Get Device Info</button> <button class="kprojs_example__button" id="btn-disconnect" disabled>Disconnect from KPro Wallet</button> </div> <br> <div class="kprojs_example_btns-sign"> <div class="kprojs_example__sign-eip712"> <h1 class="kprojs_example__header">Sign Transaction / Personal Message / EIP712 Message</h1> <div class="kprojs_example__input-field-container"> <label for="sign-path" class="kprojs_example__input-label">Path</label> <input type="text" class="kprojs_example__input-field" id="sign-path" name="sign-path" value="44'/60'/0'/0/0"> </div> <div class="kprojs_example__button-sign-container"> <button class="kprojs_example__button" id="btn-get-address" disabled>Get Address</button> </div> <div class="kprojs_example__input-field-container"> <label for="sign-data" class="kprojs_example__input-label">Transaction / Message</label> <textarea name="sign-data" id="sign-data" class="kprojs_example__textarea"></textarea> </div> <div class="kprojs_example__button-sign-container"> <button class="kprojs_example__button" id="btn-sign-tx" disabled>Sign Transaction</button> <button class="kprojs_example__button" id="btn-sign-message" disabled>Sign Personal Message</button> <button class="kprojs_example__button" id="btn-sign-eip712" disabled>Sign EIP712 Message</button> </div> </div> </div> <div class="kprojs_example__load-firmware-container"> <h1 class="kprojs_example__header">Update Firmware</h1> <input type="file" name="load-fw" id="load-fw"> <button class="kprojs_example__button" id="btn-load-fw" disabled>Update Firmware</button> </div> <div class="kprojs_example__load-erc20-container"> <h1 class="kprojs_example__header">Update ERC20 &amp; Chain Database</h1> <input type="file" name="load-erc20" id="load-erc20"> <button class="kprojs_example__button" id="btn-load-erc20" disabled>Update ERC20 DB</button> </div> </div> <div class="kprojs_example_right-container" id="logs-container"></div> </body></html>
+<!DOCTYPE html><html lang=en><meta charset=UTF-8><title>ShellJS Web HID Example Page</title><meta http-equiv=Content-Security-Policy content="script-src 'self' 'unsafe-inline';"><link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&amp;display=swap" rel=stylesheet><link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&amp;display=swap" rel=stylesheet><link href="https://fonts.googleapis.com/css2?family=Nixie+One&amp;display=swap" rel=stylesheet><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"><link rel=stylesheet href=https://choppu.github.io/shelljs-example/shelljs-example.eac9fe9a.css><script type=module src=https://choppu.github.io/shelljs-example/shelljs-example.2793e496.js></script><body id="main group">
+    <div class=shelljs_example_left-container>
+      <div class=shelljs_example_btns-container>
+        <button class=shelljs_example__button id=btn-connect>Connect to KPro Wallet</button>
+        <button class=shelljs_example__button id=btn-get-conf disabled>Get Device Info</button>
+        <button class=shelljs_example__button id=btn-disconnect disabled>Disconnect from KPro Wallet</button>
+      </div>
+      <br>
+      <div class=shelljs_example_btns-sign>
+        <div class=shelljs_example__sign-eip712>
+          <h1 class=shelljs_example__header>Sign Transaction / Personal Message / EIP712 Message</h1>
+          <div class=shelljs_example__input-field-container>
+            <label for=sign-path class=shelljs_example__input-label>Path</label>
+            <input class=shelljs_example__input-field id=sign-path name=sign-path value="44'/60'/0'/0/0">
+          </div>
+          <div class=shelljs_example__button-sign-container>
+            <button class=shelljs_example__button id=btn-get-address disabled>Get Public Key</button>
+          </div>
+          <div class=shelljs_example__input-field-container>
+            <label for=sign-data class=shelljs_example__input-label>Transaction / Message</label>
+            <textarea name=sign-data id=sign-data class=shelljs_example__textarea></textarea>
+          </div>
+          <div class=shelljs_example__button-sign-container>
+            <button class=shelljs_example__button id=btn-sign-tx disabled>Sign Eth Transaction</button>
+            <button class=shelljs_example__button id=btn-sign-message disabled>Sign Personal Message</button>
+            <button class=shelljs_example__button id=btn-sign-eip712 disabled>Sign EIP712 Message</button>
+          </div>
+        </div>
+      </div>
+      <div class=shelljs_example__load-firmware-container>
+        <h1 class=shelljs_example__header>Update Firmware</h1>
+        <input type=file name=load-fw id=load-fw>
+        <button class=shelljs_example__button id=btn-load-fw disabled>Update Firmware</button>
+      </div>
+      <div class=shelljs_example__load-erc20-container>
+        <h1 class=shelljs_example__header>Update Database</h1>
+        <input type=file name=load-erc20 id=load-erc20>
+        <button class=shelljs_example__button id=btn-load-erc20 disabled>Update Database</button>
+      </div>
+    </div>
+    <div class=shelljs_example_right-container id=logs-container></div>
+  

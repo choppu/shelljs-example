@@ -161,7 +161,7 @@ function main(): void {
         date = Date.now();
         const { fwVersion, dbVersion, serialNumber, publicKey, fwVariant, fwBeta } = await cmdSet.getAppConfiguration();
         const fwVar = ((fwVariant != undefined) && (fwVariant == 1)) ? "Bitcoin only" : "Multi-coin";
-        const fwB = ((fwBeta != undefined) && (fwBeta == 1)) ? "Beta" : "Release";
+        const fwB = ((fwBeta != undefined) && (fwBeta == 1)) ? `${fwVersion}-beta-${fwBeta}` : `${fwVersion}-release`;
         let message = `${formattedDate()} &nbsp; Firmware version - <span style="color: green;">${fwVersion}</span>, Firmware variant - <span style="color: green;">${fwVar}</span>, Firmware type - <span style="color: green;">${fwB}</span>, DB version - <span style="color: green;">${dbVersion}</span>, Serial number - <span style="color: green;">0x${serialNumber}</span>, Public key - <span style="color: green;">0x${publicKey}</span>`;
         addMessage(message, logsContainer);
       }

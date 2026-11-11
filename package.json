@@ -11,7 +11,7 @@
     "predeploy": "rm -rf dist && parcel build src/index.html --no-source-maps --public-url  https://choppu.github.io/shelljs-example/",
     "deploy": "gh-pages -d dist"
   },
-  "author": "",
+  "author": "Ksenia Balistreri",
   "license": "ISC",
   "dependencies": {
     "@choppu/shelljs": "^2.0.0",

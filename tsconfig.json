@@ -1,20 +1,17 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
+    "noEmit": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "strict": false,
     "noImplicitAny": true,
-    "lib": ["ES2020", "ES6", "dom"],
-    "module": "commonjs",
-    "target": "ES6",
-    "allowJs": true,
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "experimentalDecorators": true,
-    "jsxImportSource": "preact"
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "./**/*"
-  ],
-  "exclude": [
-    "node_modules/"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", ".parcel-cache"]
 }
